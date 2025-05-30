@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed SARE (Mhdsare) | Développeur Créatif</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Après -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Curseur personnalisé -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-text">
+            <span class="letter">C</span>
+            <span class="letter">H</span>
+            <span class="letter">A</span>
+            <span class="letter">R</span>
+            <span class="letter">G</span>
+            <span class="letter">E</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+            <span class="letter">N</span>
+            <span class="letter">T</span>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo">Mohamed</a>
+            <div class="theme-switch-wrapper">
+                <span class="theme-switch-label">☀️</span>
+                <label class="theme-switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="theme-switch-label">🌙</span>
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#home" class="navbar-links">Accueil</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-links">À propos</a></li>
+                <li class="navbar-item"><a href="#projects" class="navbar-links">Projets</a></li>
+                <li class="navbar-item"><a href="#skills" class="navbar-links">Compétences</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-links">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="home" class="hero">
+        <canvas id="particles-js"></canvas>
+        <div class="hero-container">
+            <h1 class="hero-heading">Je suis <span class="typed-text"></span><span class="cursor-blink">&nbsp;</span>
+            </h1>
+            <p class="hero-description">Développeur Web Junior créatif passionné par l'innovation et les interfaces immersives</p>
+            <button class="main-btn" onclick="location.href='#projects'">Voir mes projets</button>
+            <div class="visitor-counter">
+                <i class="fas fa-eye"></i>
+                <span id="visitorCount">0</span> visiteurs
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <h2 class="section-title">À propos de <span>moi</span></h2>
+        <div class="about-container">
+            <div class="about-img">
+                <div class="img-card">
+                    <div class="img-card-inner">
+                        <div class="img-card-front">
+                            <img src="mhd.jpeg" alt="Mohamed SARE">
+                        </div>
+                        <div class="img-card-back">
+                            <h3>Mohamed SARE</h3>
+                            <p>"Etudiant en Génie Informatique"</p>
+                            <p>Développeur créatif</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h3>Qui suis-je ?</h3>
+                <p>Je suis Mohamed SARE,étudiant Burkinabé au Maroc, je suis développeur ambitieux passionné par
+                    l'innovation, L'AI, la Cybersecurité,le web design et les interfaces immersives. Mon objectif est de
+                    créer des expériences
+                    digitales mémorables et fonctionnelles.</p>
+
+                <div class="soft-skills">
+                    <h3>Mes qualités</h3>
+                    <div class="skills-container">
+                        <div class="skill" data-skill="Sérieux">Sérieux</div>
+                        <div class="skill" data-skill="Perfectionniste">Perfectionniste</div>
+                        <div class="skill" data-skill="Ambitieux">Ambitieux</div>
+                        <div class="skill" data-skill="Curieux">Curieux</div>
+                        <div class="skill" data-skill="Créatif">Créatif</div>
+                        <div class="skill" data-skill="Persévérant">Persévérant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <h3>Mon parcours</h3>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2025 - Présent</h4>
+                        <p>Étudiant en 1ère année de Génie Informatique à l'Ecole Superieure de Technologie de
+                            Casablanca (au Maroc).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2023 - 2024</h4>
+                        <p>Baccalauréat scientifique (Ouagadougou- Burkina Faso).</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>2019 - 2020</h4>
+                        <p>Brevet d'Etude du Premier Cycle (BEPC) (Gonboussougou-Burkina Faso).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Mes <span>projets en cours</span></h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+            <button class="filter-btn" data-filter="perso">Perso</button>
+        </div>
+        <div class="projects-container">
+            <!-- Les projets seront ajoutés dynamiquement en JS -->
+        </div>
+
+        <!-- Lightbox -->
+        <div class="lightbox">
+            <div class="lightbox-content">
+                <span class="close-lightbox">&times;</span>
+                <div class="lightbox-body">
+                    <img src="" alt="" class="lightbox-img">
+                    <div class="lightbox-text">
+                        <h3 class="lightbox-title"></h3>
+                        <p class="lightbox-description"></p>
+                        <a href="#" class="lightbox-link" target="_blank">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Mes <span>compétences</span></h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML5</span>
+                        <span class="percent">70%</span>
+                    </div>
+                    <div class="progress-bar" data-width="90"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>CSS3</span>
+                        <span class="percent">65%</span>
+                    </div>
+                    <div class="progress-bar" data-width="85"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span class="percent">65%</span>
+                    </div>
+                    <div class="progress-bar" data-width="80"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span class="percent">40%</span>
+                    </div>
+                    <div class="progress-bar" data-width="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Laravel</span>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="progress-bar" data-width="70"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span class="percent">75%</span>
+                    </div>
+                    <div class="progress-bar" data-width="65"></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+                        <span class="percent">60%</span>
+                    </div>
+                    <div class="progress-bar" data-width="75"></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Design</h3>
+                <div class="skill-circle">
+                    <div class="circle-progress" data-value="80">
+                        <svg class="circle-chart" viewBox="0 0 36 36">
+                            <path class="circle-bg"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle-fill" stroke-dasharray="80, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <div class="circle-info">
+                            <span>UI/UX</span>
+                            <span class="percent">50%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-circle">
+                    <div class="circle-progress" data-value="70">
+                        <svg class="circle-chart" viewBox="0 0 36 36">
+                            <path class="circle-bg"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle-fill" stroke-dasharray="70, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                        <div class="circle-info">
+                            <span>Figma</span>
+                            <span class="percent">20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Citation -->
+    <section class="quote">
+        <div class="quote-container">
+            <div class="quote-slide active">
+                <p>"Le succès est un mauvais professeur. Il pousse les gens intelligents à croire qu'ils sont
+                    infaillibles."</p>
+                <span>- Bill Gates</span>
+            </div>
+            <div class="quote-slide">
+                <p>"Votre travail va remplir une grande partie de votre vie, la seule façon d'être vraiment satisfait
+                    est de faire ce que vous croyez être un bon travail."</p>
+                <span>- Steve Jobs</span>
+            </div>
+            <div class="quote-slide">
+                <p>"Le meilleur moyen de prédire l'avenir est de le créer."</p>
+                <span>- Peter Drucker</span>
+            </div>
+            <div class="quote-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Me <span>contacter</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Informations</h3>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>mohamedsare078@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+212 771 668 079</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Casablanca, Maroc</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>N'hésitez pas à me contacter pour la <span style="color: #0000EE; font-weight: bold;">creation de votre site web</span>, une <br>
+                        collaboration ou pour des idées de projets!!</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Envoyez un message</h3>
+                <form id="form" action="https://formsubmit.co/sarem6012@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="#contact">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nom complet</label>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Sujet</label>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Message</label>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Envoyer</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    <div class="form-message"></div>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#home">Mohamed</a>
+                <p>Développeur créatif passionné par l'innovation</p>
+            </div>
+            <div class="footer-links">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mohamed SARE (MY). Tous droits réservés.</p>
+            <button class="scroll-top">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    
+    <script>
+        // Configuration Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyD9stFu1Vig--GDsS2GDclC1hpWwhkX-D0",
+            authDomain: "mhdsare-17c60.firebaseapp.com",
+            databaseURL: "https://mhdsare-17c60-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "mhdsare-17c60",
+            storageBucket: "mhdsare-17c60.appspot.com",
+            messagingSenderId: "604240664259",
+            appId: "1:604240664259:web:9d656d3ae532ebc32b3476"
+        };
+
+        // Initialisation Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Compteur de visiteurs
+        const visitorsRef = firebase.database().ref('visitors');
+        visitorsRef.transaction((currentCount) => {
+            return (currentCount || 0) + 1;
+        });
+        visitorsRef.on('value', (snapshot) => {
+            const count = snapshot.val() || 0;
+            document.getElementById('visitorCount').textContent = count.toLocaleString();
+        });
+    </script>
+</body>
+
+</html>
